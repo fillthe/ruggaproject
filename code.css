@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    width: 100%;
+    height: 109vh;
+    background-repeat: no-repeat;
+    
+}
+
+.main {
+   
+      width: 100%;
+    background: linear-gradient(to top, rgb(0,0,0,0.5)50%,rgb(0,0,0,0.5)50%,rgb(0,0,0,0.5)50%);
+    background-image: url(bg.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 129vh;
+    background-repeat: repeat;
+    padding-top: 130px;
+}
+
+.logo {
+    margin-bottom: 20px; /* Add some space below the logo */
+}
+
+.form {
+    width: 280px;
+    height: 490px;
+    background-color: white;
+    border-radius: 3em;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    opacity: 0.8; 
+}
+
+.form-control {
+    padding: 20px;
+}
+
+input {
+    width: 100%;
+    outline: none;
+    border: none;
+    border-bottom: solid 2px orange;
+    height: 40px;
+    background: none;
+    margin-bottom: 20px;
+}
+
+button {
+    width: 200px;
+    outline: none;
+    border: none;
+    height: 40px;
+    background-color: orange;
+    color: white;
+    font-size: 16px;
+    border-radius: 2em;
+    
+
+}
+
+.social-icons{
+    
+    background: orange
+}
+
+.line {
+    color: green;
+    font-size: 14px;
+    text-align: center;
+    background-color:white;
+    width: 280px;
+    border-radius: 20px;
+    padding: 10px;
+}
+.hint {
+    font-size:12px ;
+    
+    
+    
+}
+
+.status {
+    color: orange;
+    font-size: 18px;
+    background-color:white;
+    border-radius: 20px;
+    width: 200px;
+    height: 20px;
+    padding: 5px;
+    padding-top:4px ;
+  
+}
+
+.loader {
+    border: 4px solid #f3f3f3; /* Light grey */
+    border-top: 4px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    animation: spin 2s linear infinite;
+    margin: 0 auto; /* Center the loader */
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+@media(max-width:800px){
+    .contact-input{
+        width: 80vw;
+    }
+    .contact-right{
+        display: none;
+    }
+}
+
+
+/* Style for the button */
+  .save-btn {
+    cursor: pointer;
+    transition: transform 5.2s;
+  }
+
+  /* Animation on hover */
+  .save-btn:hover {
+    transform: scale(1.1);
+  }
+
+  /* Animation on click */
+  .button:active {
+    transform: scale(0.9);
+  }
